@@ -1,0 +1,14 @@
+﻿using MiniShop.Models;
+using System.Collections.Generic;
+
+namespace MiniShop.Models
+{
+    public class Ticket
+    {
+        public int Id { get; set; }
+        public string? Title { get; set; }
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+        public List<OrderItem> OrderItems { get; set; } = new();
+    }
+}
